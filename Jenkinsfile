@@ -11,6 +11,15 @@ pipeline{
     }
 
     stages{
+             stage('installer npm'){
+            steps{
+                echo 'installer '
+                
+                sh 'npm ci'
+            }
+
+        }
+        
         stage('lancer les test de login'){
             steps{
                 echo "Exécution des tests Cypress avec tag ${params.TEST_TYPE} sur ${params.BROWSER}"
