@@ -16,7 +16,7 @@ it("login with valid credentials",{tags:['@smoke', '@login']}, () => {
     cy.url().should("eq","https://www.saucedemo.com/inventory.html")
 })
 
-it("login with invalid username et vaalid password ",{tags:'@Smoke'}, () => {
+it("login with invalid username et vaalid password ",{tags:'@smoke'}, () => {
     //let loginPage = new loginPage();
     loginPage.saisirusername("invalid_username")
     loginPage.saisirpassword("secret_sauce")
@@ -24,7 +24,7 @@ it("login with invalid username et vaalid password ",{tags:'@Smoke'}, () => {
     loginPage.elements.errorMessage().should("be.visible")
 })
 
-it("login with valid credentials",{tags:'@Smoke'}, () => {
+it("login with valid credentials",{tags:'@smoke'}, () => {
     //let loginPage = new loginPage();
     loginPage.saisirusername("standard_user")
     loginPage.saisirpassword("invalid_user")

@@ -10,9 +10,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@cypress/grep": "^4.1.0",
+    "@cypress/grep": "^4.1.1",
     "cypress": "^14.5.1",
-    "cypress-grep": "^3.0.4",
     "cypress-mochawesome-reporter": "^4.0.0"
   },
   "dependencies": {
