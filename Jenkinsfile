@@ -7,7 +7,7 @@ pipeline{
     }
     parameters{
         choice(name: 'BROWSER',choices:['edge','chrome'])
-        choice(name: "TEST_TYPE",choices:['@smoke','@regression','@checkout','@regression','@login','@addcart'],descritption:)
+        choice(name: "TEST_TYPE",choices:['@smoke','@regression','@checkout','@regression','@login','@addcart'],description: 'Choisir le type de test à exécuter')
     }
 
     stages{
